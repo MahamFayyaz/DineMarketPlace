@@ -12,6 +12,10 @@ export default function Hero() {
     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-6">
      An Industrial Take on Streetwear
     </h1>
+
+
+
+    
     <p className="leading-7 [&:not(:first-child)]:mt-6">
     Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
       </p>
