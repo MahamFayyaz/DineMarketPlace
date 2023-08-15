@@ -1,7 +1,7 @@
-// import React from 'react'
+import React from 'react'
 
-// export default function ProductCarousel({ProductData}:any){
-//   return (
-//     <div>ProductsCorousal</div>
-//   )
-// }
+export default function ProductCarousel({ProductData}:any){
+  return (
+    <div>ProductsCorousal</div>
+  )
+}
