@@ -20,15 +20,15 @@ export interface oneProductType {
     quantity: number,
     _rev: string,
     _type: string,
-    productName: string,
+    ProductName: string,
     _createdAt: string,
     _id: string,
     _updatedAt: string,
-    image: Array<imagesType>
+    Image: Array<imagesType>
     description: any,
     productTypes: Array<string>,
     size: Array<string>,
-    price: number,
+    Price: number,
 }
 
 export interface responseType {

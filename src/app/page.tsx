@@ -35,13 +35,12 @@ export default async function Home() {
   let {result}:responseType=await fetchAllProductsData()
   return (
     <div>
-      {/* <Hero/>
-      <Promotions/> */}
+      <Hero/>
+      <Promotions/>
       <ProductCorousal ProductData={result}/>
-      console.log(result)
-      {/* <Banner/>
-      <Newsletter/> */}
-      <Fetch/>
+      <Banner/>
+      <Newsletter/> 
+     {/* <Fetch/> */}
     </div>
   )
 }

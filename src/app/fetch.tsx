@@ -18,12 +18,6 @@ async function Fetch() {
         <div key={elem._id}>
           <p>Title: {elem.title}</p>
           <p>Price: {elem.Price}</p>
-          {elem.image && (
-            <img
-              src={urlFor(elem.image[0]).width(300).url()} 
-              alt={`Image for ${elem.title}`}
-            />
-          )}
         </div>
       ))}
     </div>
