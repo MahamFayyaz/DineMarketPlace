@@ -31,7 +31,7 @@ const Header=()=> {
             <li className='text-lg'><Link href={'/Category/female'}>Female</Link></li>
             <li className='text-lg'><Link href={'/Category/male'}>Male</Link></li>
             <li className='text-lg'><Link href={'/Category/kids'}>Kids</Link></li>
-            <li className='text-lg'><Link href={'/allproducts'}>All Products</Link></li>
+            <li className='text-lg'><Link href={'/AllProductsPage'}>All Products</Link></li>
         </ul>
         <div className='hidden lg:inline-flex justify-center items-center'>
         <SearchIcon/>

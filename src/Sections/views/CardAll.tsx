@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
 import React, { FC } from 'react'
-import { oneProductType } from '@/utils/ProductsDataArrayAndType';
+import { oneProductType } from '@/utils/ProductsDataArrayAndType'
 import { client } from '../../../sanity/lib/client';
 import Link from 'next/link';
 
@@ -12,22 +12,22 @@ function urlFor(source: any) {
 }
 
 
-const Cardss: FC<{ singleProductData: oneProductType }> = ({ singleProductData }) => {
+const CardAll: FC<{ singleProductData: oneProductType }> = ({ singleProductData }) => {
     return (
-        <Link href={`/catalog/${singleProductData.slug.current}`}>
-        <div className=' max-w-sm min-w-[24rem] space-y-3 select-none hover:scale-110 duration-300'>
+        <div className='mx-auto w-[11rem] md:w-[16rem] space-y-3 duration-300'>
             <div className='relative w-full'>
                 <div className='absolute inset-0 z-10' />
-                <Image width={1000} height={1000} src={urlFor(singleProductData.Image[0]).width(500).height(500).url()} alt={singleProductData.Image[0].alt} />
+                <Image width={1000} height={1000} src={urlFor(singleProductData.Image[0]).width(1000).height(1000).url()} alt={singleProductData.Image[0].alt} />
             </div>
             <div className='space-y-1 text-gray-600 font-semibold text-lg select-none'>
-                
+                <Link href={`/catalog/${singleProductData.slug.current}`}>
                     <h6>{singleProductData.ProductName}</h6>
+                    <p className='text-sm text-pink-500'>{singleProductData.productTypes[0]}</p>
                     <p>${singleProductData.Price}</p>
-                
-            </div> 
-        </div></Link>
+                </Link>
+            </div>
+        </div>
     )
 }
 
-export default Cardss
+export default CardAll
