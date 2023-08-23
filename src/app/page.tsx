@@ -34,12 +34,12 @@ export default async function Home() {
   let {result}:responseType=await fetchAllProductsData()
   return (
     <div>
-      {/* <Hero/>
+      <Hero/>
       <Promotions/>
       <ProductCorousal ProductData={result}/>
       <Banner/>
       <Newsletter/>  
-     <Fetch/> */}
+     <Fetch/>
     </div>
   )
 }
