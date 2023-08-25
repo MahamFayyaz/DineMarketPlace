@@ -9,6 +9,7 @@ import Banner from '@/Sections/Banner'
 import Newsletter from '@/Sections/Newsletter'
 import {client} from '@/lib/sanityClient'
 import Fetch from './fetch'
+import { UserButton } from "@clerk/nextjs";
 
 import { Result } from 'postcss'
 import Cardss from '@/Sections/views/Cardss'
@@ -34,6 +35,9 @@ export default async function Home() {
   let {result}:responseType=await fetchAllProductsData()
   return (
     <div>
+      <div>
+      <UserButton afterSignOutUrl="/"/>
+    </div>
       <Hero/>
       <Promotions/>
       <ProductCorousal ProductData={result}/>
