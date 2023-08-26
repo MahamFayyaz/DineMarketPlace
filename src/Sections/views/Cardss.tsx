@@ -4,6 +4,7 @@ import React, { FC } from 'react'
 import { oneProductType } from '@/utils/ProductsDataArrayAndType';
 import { client } from '../../../sanity/lib/client';
 import Link from 'next/link';
+import AddtoCart from '@/components/ui/AddtoCart';
 
 const builder = imageUrlBuilder(client);
 
@@ -21,8 +22,8 @@ const Cardss: FC<{ singleProductData: oneProductType }> = ({ singleProductData }
                 <Image width={1000} height={1000} src={urlFor(singleProductData.Image[0]).width(500).height(500).url()} alt={singleProductData.Image[0].alt} />
             </div>
             <div className='space-y-1 text-gray-600 font-semibold text-lg select-none'>
-                
-                    <h6>{singleProductData.ProductName}</h6>
+               
+                    <h2>nxx{singleProductData.ProductName}</h2>
                     <p>${singleProductData.Price}</p>
                 
             </div> 

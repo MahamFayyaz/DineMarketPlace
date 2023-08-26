@@ -43,7 +43,7 @@ export default async function Home() {
       <ProductCorousal ProductData={result}/>
       <Banner/>
       <Newsletter/>  
-     <Fetch/>
+     {/* <Fetch/> */}
     </div>
   )
 }

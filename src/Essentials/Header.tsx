@@ -1,5 +1,5 @@
 'use client'
-
+import { UserButton } from "@clerk/nextjs";
 import { useSelector} from 'react-redux'
 import { cartActions } from '@/store/slice/CartSlice';
 import CounterSlice from '@/store/slice/CartSlice';
@@ -36,6 +36,7 @@ const Header=()=> {
         <div className='hidden lg:inline-flex justify-center items-center'>
         <SearchIcon/>
         <Input type='text' placeholder='What are you looking for?'/></div>
+        <div><UserButton afterSignOutUrl="/"/></div>
         <div><CartItems/></div>
        
         <button
@@ -59,6 +60,7 @@ const Header=()=> {
             <li className='text-lg'><Link href={'/Category/male'}>Male</Link></li>
             <li className='text-lg'><Link href={'/Category/kids'}>Kids</Link></li>
             <li className='text-lg'><Link href={'/allproducts'}>All Products</Link></li></ul>
+            
           </div>
         </div>
       )}
