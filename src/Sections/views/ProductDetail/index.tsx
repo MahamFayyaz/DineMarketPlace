@@ -8,6 +8,7 @@ import { FC } from 'react'
 import { client } from '@/lib/sanityClient'
 import Quantity from '@/utils/Quantity'
 import AddtoCart from '@/components/ui/AddtoCart'
+import Productscare from '@/Sections/Productscare'
 
 
 const builder = imageUrlBuilder(client);
@@ -49,10 +50,9 @@ export const ProductDetail:FC < {item:oneProductType}>=({item}) => {
             
             
             </div>  </div>
-            {/* <div className='w-[10rem] mt-2'>
-            <Image width={1000} height={1000} src={urlFor(item.Image[0]).height(1000).width(1000).url()} alt={item.Image[0].alt}/>
-        </div> */}
+           
         </div>
+        <Productscare/>
     </div>
   )
 }
