@@ -12,15 +12,15 @@ const Quantity = () => {
         onClick={() => {
           setNum(num <= 1 ? 1 : num - 1);
         }}
-        className="w-6 h-6 border rounded-full flex items-center justify-between"
+        className=" flex justify-center w-8 h-8 border rounded-full center bg-gray-600 text-3xl text-gray-50"
       >
         -
       </button>
       {/* Number */}
-      <span className="text-sm font-semibold">{num}</span>
+      <span className="text-lg font-semibold">{num}</span>
       {/* Plus */}
       <button
-        className="w-6 h-6 border rounded-full center"
+        className="flex justify-center w-8 h-8 border rounded-full center bg-gray-600 text-3xl text-gray-50"
         onClick={() => {
           setNum(num + 1);
         }}
