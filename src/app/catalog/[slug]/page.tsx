@@ -22,15 +22,3 @@ const Catalog= async ({params}:{params:{slug:string}})  => {
   export default Catalog;
 
 
-//  const Catalog:FC<{params:{slug:string}}> = ({params}) => {
-//     console.log(params.slug)
-//   return (
-//     <div><div>{params.slug}
-//     </div>
-//    Quantity=<Quantity/>
-//    <AddtoCart/>
-//    </div>
-
-//   )
-// }
-// export default Catalog;

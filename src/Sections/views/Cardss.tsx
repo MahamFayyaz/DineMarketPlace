@@ -23,7 +23,7 @@ const Cardss: FC<{ singleProductData: oneProductType }> = ({ singleProductData }
             </div>
             <div className='space-y-1 text-gray-600 font-semibold text-lg select-none'>
                
-                    <h2>nxx{singleProductData.ProductName}</h2>
+                    <h2>nxx{singleProductData.title}</h2>
                     <p>${singleProductData.Price}</p>
                 
             </div> 

@@ -34,14 +34,14 @@ export const ProductDetail:FC < {item:oneProductType}>=({item}) => {
             </div>
            <div className='space-y-2'>
             <div>
-                <h1>{item.ProductName}</h1>
-                <h2 className='text-gray-700'>{item.productTypes}</h2>
+                <h1 className='text-3xl text-gray-700'>{item.title}</h1>
+                <h2 className='text-gray-700 mt-3'>{item.productTypes}</h2>
             </div>
             <div className='mt-3'>
                 <p>SELECT SIZE</p>
                 <div className='flex gap-4'>
                     {item.size.map((subItem:string,index:number)=>(
-                        <div className='cursor-pointer rounded-full bg-gray-100 w-12 h-12 flex justify-center items-center'>{subItem}</div>
+                        <div className='cursor-pointer rounded-full bg-gray-100 w-12 h-12 flex flex-col md:flex-row lg:flex-row justify-center items-center'>{subItem}</div>
                     ))}
                 </div>
             </div>

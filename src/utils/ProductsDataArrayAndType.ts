@@ -16,11 +16,11 @@ export interface imagesType {
 
 
 export interface oneProductType {
+    title:string,
     slug: slugType,
     quantity: number,
     _rev: string,
     _type: string,
-    ProductName: string,
     _createdAt: string,
     _id: string,
     _updatedAt: string,

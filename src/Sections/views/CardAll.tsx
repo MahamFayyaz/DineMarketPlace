@@ -21,7 +21,7 @@ const CardAll: FC<{ singleProductData: oneProductType }> = ({ singleProductData 
             </div>
             <div className='space-y-1 text-gray-600 font-semibold text-lg select-none'>
                 <Link href={`/catalog/${singleProductData.slug.current}`}>
-                    <h6>{singleProductData.ProductName}</h6>
+                    <h6 className='text-lg'>{singleProductData.title}</h6>
                     <p className='text-sm text-pink-500'>{singleProductData.productTypes[0]}</p>
                     <p>${singleProductData.Price}</p>
                 </Link>

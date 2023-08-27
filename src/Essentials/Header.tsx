@@ -29,7 +29,7 @@ const Header=()=> {
     <Link href={'/'}><Image src={logo} alt='logo here'/></Link>
         <ul className='hidden lg:inline-flex gap-x-10'>
             <li className='text-lg'><Link href={'/female/female'}>Female</Link></li>
-            <li className='text-lg'><Link href={'/male'}>Male</Link></li>
+            <li className='text-lg'><Link href={'/male/male'}>Male</Link></li>
             <li className='text-lg'><Link href={'/Category/kids'}>Kids</Link></li>
             <li className='text-lg'><Link href={'/AllProductsPage'}>All Products</Link></li>
         </ul>
