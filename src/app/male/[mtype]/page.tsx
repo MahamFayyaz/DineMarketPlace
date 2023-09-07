@@ -5,7 +5,7 @@ import { FC } from "react"
 import AddtoCart from "@/components/ui/AddtoCart";
 
 async function fetchAllProductsData() {
-    let res=await fetch(`https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2023-07-02/data/query/production?query=*[_type == "productsan"]`
+    let res=await fetch(`https://xcn24sra.api.sanity.io/v2023-07-02/data/query/production?query=*%5B_type%3D%3D%22productsan%22+%26%26+productTypes%5B0%5D%3D%3D%22Male%22%5D`
 , {
     next: {
       revalidate: 60
